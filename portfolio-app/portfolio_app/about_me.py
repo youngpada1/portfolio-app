@@ -19,7 +19,7 @@ def about_me():
         col1, col2, col3, col4 = st.columns(4)
         # Profile photo section
         with col1: 
-            profile_pic = "https://raw.githubusercontent.com/youngpada1/padawanapp/990b059530ce772bc038f8806b80fe64541afecf/padawapp/images/Menu/Flavia%20-%20Profile%20pic.png"
+            profile_pic = "https://raw.githubusercontent.com/youngpada1/portfolio-app/9fcb7438c028c7517786155b5be9cd1fc517447e/portfolio-app/portfolio_app/images/menu/profile%20icon.png"
             st.image(profile_pic, width=100)
 
         # Download resume
@@ -70,11 +70,11 @@ def about_me():
 
         # Attack Mag
         with col1:
-            attackmag = 'https://raw.githubusercontent.com/youngpada1/padawanapp/c1fbfe2975240555c9dd6968ae8ada7962da0551/padawapp/images/Attack%20Mag.png'
+            streamlit_link1 = 'https://raw.githubusercontent.com/youngpada1/padawanapp/c1fbfe2975240555c9dd6968ae8ada7962da0551/padawapp/images/Attack%20Mag.png'
             col1.markdown('Link Title')
             st.markdown(f'''
                         <a href='https://www.attackmagazine.com/features/interview/5-women-in-the-synthesizer-industry-flavia-ferreira-focusrite/'>
-                        <img src='{attackmag}' width=100%/>
+                        <img src='{streamlit_link1}' width=100%/>
                         </a>''',
                         unsafe_allow_html=True
                         )
