@@ -1,14 +1,12 @@
 [tool.poetry]
 name = "portfolio-app"
 version = "0.1.0"
-description = "This app is a template to create a resume or portfolio app"
+description = "This app is a template to create a resume or portfolio"
 authors = ["Young Padawan (Flavia Ferreira <flavsferr@gmail.com>)"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-streamlit = "^1.30.0"
-
 
 [build-system]
 requires = ["poetry-core"]
