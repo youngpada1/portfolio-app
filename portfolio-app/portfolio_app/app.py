@@ -10,7 +10,7 @@ st.set_page_config(layout='wide')
 def menu():
     with st.sidebar:
         selected = option_menu(
-            menu_title='Flavia Ferreira',
+            menu_title='Your Name',
             menu_icon='pages', default_index=0,
             options=['About Me', 'Experience'],
             #orientation='horizontal',
