@@ -1,33 +1,100 @@
-import streamlit as st
-from streamlit_option_menu import option_menu
-from about_me import about_me
-from experience import experience
+Company Name:
+  images:
+    - name: Product Name
+      url: https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/streamlit.png
+      width: 94%
+    - name: Product Name
+      url: https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/streamlit.png
+      width: 94%
+    - name: Product Name
+      url: https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/streamlit.png
+      width: 94%
+    - name: Product Name
+      url: https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/streamlit.png
+      width: 94%
 
-### Set layout page to wide
-st.set_page_config(layout='wide')
+  title: 
+    name: Add your role 
+    start date: 01/11/2021
+    end date: Present
+    location: Add the location
 
+  skills:
+    Cost Management: | 
+       Add Description
+    Certification: |
+       Add Description
+    Supply Chain Management: |
+       Add Description
+    Process and Project Development: |
+       Add Description
+    Design Optimisation: |
+       Add Description
+    PLM System Trainer: |
+       Add Description
+    Production Engineer Trainer: |
+       Add Description
+    Sustainability: |
+       Add Description
 
-def menu():
-    with st.sidebar:
-        selected = option_menu(
-            menu_title='Flavia Ferreira',
-            menu_icon='pages', default_index=0,
-            options=['About Me', 'Experience'],
-            #orientation='horizontal',
-            styles={
-        'container': {'padding': '5!important', 'background-color': '#000000'},
-        'icon': {'color': 'orange', 'font-size': '10px'}, 
-        'nav-link': {'font-size': '12px', 'text-align': 'left', 'margin':'0px', '--hover-color': '#eee'},
-        'nav-link-selected': {'background-color': '#000000'},
-             })
-        return selected
-    
+Company Name 1:
+  images:
+    - name: Product Name
+      url: https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/streamlit.png
+      width: 94%
+    - name: Product Name
+      url: https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/streamlit.png
+      width: 94%
+    - name: Product Name
+      url: https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/streamlit.png
+      width: 94%
+    - name: Product Name
+      url: https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/streamlit.png
+      width: 94%
 
+  title: 
+    name: Add your role 
+    start date: 01/11/2021
+    end date: Present
+    location: Add the location
 
-if __name__ == "__main__":
-    selected = menu()
-    if selected == "About Me":
-        about_me()
-    elif selected == "Experience":
-        experience()
-        
+  skills:
+    Skill: |
+       Add Description
+    Skill 1: |
+       Add Description
+    Skill 2: |
+       Add Description
+    Skill 3: |
+       Add Description
+
+Company Name 2:
+  images:
+    - name: Product Name
+      url: https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/streamlit.png
+      width: 94%
+    - name: Product Name
+      url: https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/streamlit.png
+      width: 94%
+    - name: Product Name
+      url: https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/streamlit.png
+      width: 94%
+    - name: Product Name
+      url: https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/streamlit.png
+      width: 94%
+
+  title: 
+    name: Add your role 
+    start date: 01/11/2021
+    end date: Present
+    location: Add the location
+
+  skills:
+    Skill: |
+       Add Description
+    Skill 1: |
+       Add Description
+    Skill 2: |
+       Add Description
+    Skill 3: |
+       Add Description
