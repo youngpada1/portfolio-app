@@ -13,7 +13,6 @@ import yaml
 def experience():
     skills_data = yaml.load((Path(__file__).parent / 'skills.yml').open(), Loader=yaml.BaseLoader)
 
-
     ### Creating columns to add animation to column3
     col1, col2, col3, col4 = st.columns(4)
     with col1: # Page title
