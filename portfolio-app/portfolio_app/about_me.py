@@ -19,7 +19,7 @@ def about_me():
         col1, col2, col3, col4 = st.columns(4)
         # Profile photo section
         with col1: 
-            profile_pic = "https://raw.githubusercontent.com/youngpada1/padawanapp/990b059530ce772bc038f8806b80fe64541afecf/padawapp/images/Menu/Flavia%20-%20Profile%20pic.png"
+            profile_pic = "https://raw.githubusercontent.com/youngpada1/portfolio-app/9fcb7438c028c7517786155b5be9cd1fc517447e/portfolio-app/portfolio_app/images/menu/profile%20icon.png"
             st.image(profile_pic, width=100)
 
         # Download resume
@@ -39,17 +39,17 @@ def about_me():
         # Link to Github
 
         with col3:
-            github = 'https://raw.githubusercontent.com/youngpada1/padawanapp/a98515a589676598e3ff4fa18a3c24d6f23971b8/padawapp/images/github.png'
+            github = 'https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/github.png'
             st.markdown(f'''
             <a href='https://github.com'>
-                <img src='{github}' width='20px'/>
+                <img src='{github}' width='25px'/>
             </a>''',
             unsafe_allow_html=True
         )
 
         # Link to LinkedIn
         with col4:
-            linkedin = 'https://raw.githubusercontent.com/youngpada1/padawanapp/a98515a589676598e3ff4fa18a3c24d6f23971b8/padawapp/images/linkedin.png' #LinkedIn profile
+            linkedin = 'https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/linkedin.png' #LinkedIn profile
             st.markdown(f'''
             <a href='https://www.linkedin.com/'>
                 <img src='{linkedin}' width='20px'/>
@@ -61,42 +61,42 @@ def about_me():
         st.write('Add brief description of your who you are and your career experiences')
         st.write(''' ''')
 
-        # Adding link to interviews (Media)
+        # Adding link (Photos and Hyperlinks)
         st.subheader('Other Links')
 
 
         # Organizing links per column
         col1, col2, col3= st.columns(3)
 
-        # Attack Mag
+        # Streamlit Link 1
         with col1:
-            attackmag = 'https://raw.githubusercontent.com/youngpada1/padawanapp/c1fbfe2975240555c9dd6968ae8ada7962da0551/padawapp/images/Attack%20Mag.png'
+            streamlit_link1 = 'https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/streamlit.png'
             col1.markdown('Link Title')
             st.markdown(f'''
                         <a href='https://www.attackmagazine.com/features/interview/5-women-in-the-synthesizer-industry-flavia-ferreira-focusrite/'>
-                        <img src='{attackmag}' width=100%/>
+                        <img src='{streamlit_link1}' width=100%/>
                         </a>''',
                         unsafe_allow_html=True
                         )
 
-        # Elektor Mag
+        # Streamlit Link 2
         with col2:
-            elektor = 'https://raw.githubusercontent.com/youngpada1/padawanapp/c1fbfe2975240555c9dd6968ae8ada7962da0551/padawapp/images/Elektor%20Mag.png'
+            streamlit_link2 = 'https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/streamlit.png'
             col2.markdown('Link Title')
             st.markdown(f'''
                         <a href='https://www.elektormagazine.com/articles/women-in-tech'>
-                        <img src='{elektor}' width=100%/>
+                        <img src='{streamlit_link2}' width=100%/>
                         </a>''',
                         unsafe_allow_html=True
                         )
 
-        # Instagram
+        # Streamlit Link 3
         with col3:
-            instagram = 'https://raw.githubusercontent.com/youngpada1/padawanapp/c1fbfe2975240555c9dd6968ae8ada7962da0551/padawapp/images/Focusrite.jpeg'
+            streamlit_link3 = 'https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/streamlit.png'
             col3.markdown('Link Title')
             st.markdown(f'''
                         <a href='https://www.instagram.com/reel/Ct1yGcQoE91/'>
-                        <img src='{instagram}' width=100%/>
+                        <img src='{streamlit_link3}' width=100%/>
                         </a>''',
                         unsafe_allow_html=True
                         )
@@ -105,18 +105,18 @@ def about_me():
 
         # Adding Youtube Videos
         col1, col2, col3 = st.columns(3)
-        # Video 1 - Octatrack
+        # Video 1 
         with col1:
             col1.markdown('Video Title')
-            octa_video = st.video('https://youtu.be/i4GFGXrruok')
-        # Video 2 - Atari
+            streamlit_video = st.video('https://youtu.be/JSeQSnGovSE?feature=shared')
+        # Video 2 
         with col2:
             col2.markdown('Video Title')
-            atari_video = st.video('https://www.youtube.com/watch?v=glaTan_GPs0')
-        # Video 3 - Octatrack
+            streamlit_video1 = st.video('https://youtu.be/YaFvCwjk-_A?feature=shared')
+        # Video 3 
         with col3:
             col3.markdown('Video Title')
-            eurorack_video = st.video('https://www.youtube.com/watch?v=l1DEk35WWA8')
+            streamlit_video3 = st.video('https://youtu.be/vzlQkAzWCeI?feature=shared')
     
 
     
