@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "tests"
+name = "portfolio-app"
 version = "0.1.0"
 description = ""
-authors = ["Young Padawan <flavsferr@gmail.com>"]
+authors = ["Young Padawan (Flavia Ferreira <flavsferr@gmail.com>)"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
