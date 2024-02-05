@@ -25,8 +25,8 @@ This is a template designed to help you showcase your work experience in a portf
 Feel free to explore and make this template your own!
 
 ## Examples
-
-This is how the 'About Me' section looks like:
+**Menu Layout:**
+This is how the "About Me" page looks like:
 ![Alt text](<Screenshot 2024-02-05 at 16.21.52.png>)
 ![Alt text](<Screenshot 2024-02-05 at 16.22.17.png>)
 
