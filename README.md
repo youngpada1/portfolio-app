@@ -26,11 +26,11 @@ Feel free to explore and make this template your own!
 
 ## Examples
 
-This is how the Intro Page looks like:
-![Alt text](<Screenshot 2024-02-05 at 15.56.29.png>)
-![Alt text](<Screenshot 2024-02-05 at 15.56.54.png>)
+This is how the 'About Me' section looks like:
+![Alt text](<Screenshot 2024-02-05 at 16.21.52.png>)
+![Alt text](<Screenshot 2024-02-05 at 16.22.17.png>)
 
-And here's an example of the Experience Section:
+And here's an example of the 'Experience' Section:
 ![Alt text](<Screenshot 2024-02-05 at 15.54.01.png>)
 
 ## Links
