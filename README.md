@@ -27,11 +27,11 @@ Feel free to explore and make this template your own!
 ## Examples
 **Menu Layout:**
 This is how the "About Me" page looks like:
-![Alt text](<Screenshot 2024-02-05 at 16.21.52.png>)
-![Alt text](<Screenshot 2024-02-05 at 16.22.17.png>)
+![Alt text](<Screenshots/Screenshot 2024-02-05 at 16.21.52.png>) 
+![Alt text](<Screenshots/Screenshot 2024-02-05 at 16.22.17.png>)
 
 And here's an example of the 'Experience' Section:
-![Alt text](<Screenshot 2024-02-05 at 15.54.01.png>)
+![Alt text](<Screenshots/Screenshot 2024-02-05 at 15.54.01.png>)
 
 ## Links
 [GitHub Project](https://github.com/youngpada1/portfolio-app)
