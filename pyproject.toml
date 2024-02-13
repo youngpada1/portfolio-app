@@ -17,6 +17,9 @@ streamlit-lottie = "^0.0.5"
 pyyaml = "^6.0.1"
 ruamel-yaml = "^0.18.5"
 
+[tool.poetry.scripts]
+portfolio = "portfolio_app.app:main"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

@@ -1,7 +1,11 @@
+#!/usr/local/bin/python
+
 import streamlit as st
+from streamlit import runtime
+from streamlit.web import cli
 from streamlit_option_menu import option_menu
-from about_me import about_me
-from experience import experience
+
+from portfolio_app import about_me, experience
 
 ### Set layout page to wide
 st.set_page_config(layout='wide')
@@ -21,12 +25,32 @@ def menu():
         'nav-link-selected': {'background-color': '#000000'},
             })
         return selected
-    
 
-if __name__ == "__main__":
+def app():
     selected = menu()
     if selected == "About Me":
         about_me()
     elif selected == "Experience":
         experience()
-        
+
+
+def main():
+    """Execute with streamlit"""
+    if runtime.exists():
+        app()
+    else:
+        import sys
+
+        sys.argv = [
+            "streamlit",
+            "run",
+            __file__,
+            "--server.headless=true",
+            "--server.enableXsrfProtection=false",
+            "--server.enableCORS=false",
+        ]
+        st.write("Relaunching...")
+        sys.exit(cli.main())
+
+if __name__ == "__main__":
+    main()        
