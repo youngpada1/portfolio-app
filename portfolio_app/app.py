@@ -1,5 +1,8 @@
 #!/usr/local/bin/python
 
+import argparse
+import pathlib
+import yaml
 import streamlit as st
 from streamlit import runtime
 from streamlit.web import cli
@@ -26,18 +29,27 @@ def menu():
             })
         return selected
 
-def app():
+def app(source):
+    portfolio = yaml.load(source.open(), Loader=yaml.BaseLoader)
     selected = menu()
     if selected == "About Me":
-        about_me()
+        about_me(portfolio.get("about_me"), source_path=source.parent)
     elif selected == "Experience":
-        experience()
+        experience(portfolio.get("experience"))
 
 
 def main():
-    """Execute with streamlit"""
+    
+    parser = argparse.ArgumentParser(
+                    prog='Portfolio App',
+                    description='Serve your portfolio as a streamlit',
+                    epilog='Brought to you by youngpada1')
+
+    parser.add_argument('portfolio', type=pathlib.Path, help="Path to the YAML portfolio file")
+    args = parser.parse_args()
+
     if runtime.exists():
-        app()
+        app(args.portfolio)
     else:
         import sys
 
@@ -48,6 +60,7 @@ def main():
             "--server.headless=true",
             "--server.enableXsrfProtection=false",
             "--server.enableCORS=false",
+            str(args.portfolio),
         ]
         st.write("Relaunching...")
         sys.exit(cli.main())

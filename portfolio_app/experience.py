@@ -3,15 +3,9 @@ import json
 import streamlit as st
 from streamlit_option_menu import option_menu
 from streamlit_lottie import st_lottie
-import yaml
 
 
-
-
-
-### Adding Selectbox
-def experience():
-    skills_data = yaml.load((Path(__file__).parent / 'skills.yml').open(), Loader=yaml.BaseLoader)
+def experience(experience_data: dict):
 
     ### Creating columns to add animation to column3
     col1, col2, col3, col4 = st.columns(4)
@@ -35,11 +29,11 @@ def experience():
 
     companies = st.selectbox(
         'Select a company',
-        list(skills_data.keys())
+        list(experience_data.keys())
     )
     st.write(''' ''')
 
-    company_data = skills_data[companies]
+    company_data = experience_data[companies]
 
     # Images
     if "images" in company_data:
