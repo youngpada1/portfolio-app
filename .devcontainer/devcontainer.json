@@ -19,7 +19,7 @@
 	},
 	"onCreateCommand": "pip install -e .",
 	"postAttachCommand": {
-	  "server": "portfolio"
+	  "server": "portfolio example/portfolio.yml"
 	},
 	"portsAttributes": {
 	  "8501": {
