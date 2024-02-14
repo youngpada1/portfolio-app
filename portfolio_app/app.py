@@ -50,7 +50,7 @@ def main():
     args = parser.parse_args()
 
     if args.portfolio is None:
-        portfolio = os.environ.get("PORTFOLIO_PATH", DEFAULT_PORTFOLIO_PATH)
+        portfolio = Path(os.environ.get("PORTFOLIO_PATH", DEFAULT_PORTFOLIO_PATH))
     else:
         portfolio = args.portfolio
 
