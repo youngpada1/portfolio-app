@@ -12,20 +12,22 @@ about_me:
   linkedin: https://linkedin.com
 
   links:
-    - url: http://www.google.com
+    - title: Link title 1
+      url: http://www.google.com
       image: &streamlit_image https://raw.githubusercontent.com/youngpada1/portfolio-app/efa44604e838ff5218db9a9229b8fff256df5ae6/portfolio-app/portfolio_app/images/menu/streamlit.png
-      title: Link title
 
-    - url: http://www.google.com
-      image: *streamlit_image
-      title: Link title
 
-    - url: http://www.google.com
+    - title: Link title 2
+      url: http://www.google.com
       image: *streamlit_image
-      title: Link title
+
+    - title: Link title 3
+      url: http://www.google.com
+      image: *streamlit_image
+      
 
   youtube:
-    - title: Youtube Video
+    - title: Youtube Video 1
       url: https://youtu.be/JSeQSnGovSE
     - title: Youtube Video 2
       url: https://youtu.be/YaFvCwjk-_A
