@@ -78,17 +78,17 @@ def about_me(about_me_data, source_path):
                         url = links[i]["url"]
                         image = links[i]["image"]
                     except KeyError as exc:
-                        raise KeyError(f"'{exc}' missing for link #{i}") from exc
-    
-                    col.markdown(title)
+                        st.error(f"'{exc}' property missing for link #{i}")
+                        continue
 
                     col.markdown(f'''
+                                { title }
                                 <a href='{url}'>
                                 <img src='{image}' width=100%/>
                                 </a>''',
                                 unsafe_allow_html=True
                                 )
-            st.write('''''') #Space between mag links & Youtube Videos
+            st.write('''''') #Space between links & Youtube Videos
 
         if "youtube" in about_me_data:
             # Adding Youtube Videos
