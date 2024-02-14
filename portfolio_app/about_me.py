@@ -96,6 +96,10 @@ def about_me(about_me_data, source_path):
             cols = st.columns(len(youtube))
             
             for i, col in enumerate(cols):
-                with col1:
-                    col.markdown(youtube[i]["title"])
-                    col.video(youtube[i]["url"])            
+                with col:
+                    try:
+                        st.markdown(youtube[i]["title"])
+                        st.video(youtube[i]["url"])
+                    except KeyError as exc:
+                        st.error(f"'{exc}' property missing for youtube video #{i}")
+                        continue
