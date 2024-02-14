@@ -1,7 +1,7 @@
 #!/usr/local/bin/python
-
+import os
 import argparse
-import pathlib
+from pathlib import Path
 import yaml
 import streamlit as st
 from streamlit import runtime
@@ -13,6 +13,7 @@ from portfolio_app import about_me, experience
 ### Set layout page to wide
 st.set_page_config(layout='wide')
 
+DEFAULT_PORTFOLIO_PATH = Path(__file__).parents[1] / "example/portfolio.yml"
 
 def menu():
     with st.sidebar:
@@ -42,14 +43,19 @@ def main():
     
     parser = argparse.ArgumentParser(
                     prog='Portfolio App',
-                    description='Serve your portfolio as a streamlit',
+                    description='Serve your portfolio app',
                     epilog='Brought to you by youngpada1')
 
-    parser.add_argument('portfolio', type=pathlib.Path, help="Path to the YAML portfolio file")
+    parser.add_argument('portfolio', type=Path, help="Path to the YAML portfolio file", nargs='?')
     args = parser.parse_args()
 
+    if args.portfolio is None:
+        portfolio = os.environ.get("PORTFOLIO_PATH", DEFAULT_PORTFOLIO_PATH)
+    else:
+        portfolio = args.portfolio
+
     if runtime.exists():
-        app(args.portfolio)
+        app(portfolio)
     else:
         import sys
 
@@ -60,7 +66,7 @@ def main():
             "--server.headless=true",
             "--server.enableXsrfProtection=false",
             "--server.enableCORS=false",
-            str(args.portfolio),
+            str(portfolio),
         ]
         st.write("Relaunching...")
         sys.exit(cli.main())
