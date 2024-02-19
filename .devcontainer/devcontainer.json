@@ -6,7 +6,7 @@
 	  "codespaces": {
 		"openFiles": [
 		  "README.md",
-		  "portfolio-app/portfolio_app/app.py"
+		  "example/portfolio.yml"
 		]
 	  },
 	  "vscode": {
@@ -17,9 +17,9 @@
 		]
 	  }
 	},
-	"updateContentCommand": "[ -f packages.txt ] && sudo apt update && sudo apt upgrade -y && sudo xargs apt install -y <packages.txt; [ -f requirements.txt ] && pip3 install --user -r requirements.txt; pip3 install --user streamlit; echo '✅ Packages installed and Requirements met'",
+	"onCreateCommand": "pip install -e .",
 	"postAttachCommand": {
-	  "server": "streamlit run portfolio-app/portfolio_app/app.py --server.enableCORS false --server.enableXsrfProtection false"
+	  "server": "portfolio example/portfolio.yml"
 	},
 	"portsAttributes": {
 	  "8501": {

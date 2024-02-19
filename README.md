@@ -11,7 +11,7 @@ This is a template designed to help you showcase your work experience in a portf
 ## Getting Started
 
 1. Clone this repository to your local machine.
-2. Customize the content in the provided files to match your work experience.
+2. Customize the content of your `portfolio.yml` file to match your profile and your work experience.
 3. Add your project images or links to demonstrate your achievements.
 4. Personalize the styling to align with your unique preferences.
 
